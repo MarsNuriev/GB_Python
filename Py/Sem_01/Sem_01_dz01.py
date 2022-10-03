@@ -3,9 +3,15 @@
 # - 6 -> да
 # - 7 -> да
 # - 1 -> нет
-
-day = int(input("введите день недели: "))
-if day == 6 or day == 7:
+while True:
+    try:
+        day = int(input("введите день недели: "))
+        if 1 <= day <= 7:
+            break
+    except ValueError:
+        print('---------')
+    
+if day in (6,7):
     print(f"{day} - выходной")
 else:
     print(f"{day} - не выходной")    
