@@ -7,7 +7,7 @@ n = random.randint(2, 20)
 for arr_index in range(n):
     arr.append(random.randint(0, 100))
 
-for arr_index1 in range(n):
+for arr_index1 in range(0,len(arr)):
     if arr_index1 % 2 != 0:
         arr_sum = arr_sum + arr[arr_index1]
 
