@@ -3,9 +3,14 @@
 # - 45 -> 101101
 # - 3 -> 11
 # - 2 -> 10
-
-value = int(input('Введите целое число: '))
-value_fix = value
+while True:
+    try:
+        value = int(input('Введите целое положительное число: '))
+        value_fix = value
+        if value > 0:
+            break
+    except ValueError:
+        print('------')
 arr = []
 while value // 2 >= 1:
     arr.append(value - (value//2)*2)
