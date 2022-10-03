@@ -14,6 +14,5 @@ if value % 2 != 0:
     arr.append(1)
 else:
     arr.append(0)
-# arr_reversed = arr.reverse()
 arr.reverse()
 print(f"{value_fix} -> {''.join(map(str,arr))}")
