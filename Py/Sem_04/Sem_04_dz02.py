@@ -1,7 +1,4 @@
 # Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N
-from multiprocessing import Value
-
-
 while True:
     try:
         n = int(input('Введите N: '))
