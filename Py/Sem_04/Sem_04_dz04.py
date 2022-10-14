@@ -14,7 +14,7 @@ def urav(value):
     my_list = []
     my_list1 = []
     for i in range(value+1):
-        my_list.append(randint(0, 100))
+        my_list.append(random.randint(0, 100))
     # print(my_list)
     for koef in range(value+1)[::-1]:
         if my_list[koef]!=0:
