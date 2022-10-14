@@ -18,7 +18,7 @@ def urav(value):
     # print(my_list)
     for koef in range(value+1)[::-1]:
         if my_list[koef]!=0:
-            my_list1.append(f'{my_list[koef]}x^{koef}')
+            my_list1.append(f'{my_list[koef]}*x^{koef}')
     my_list1 = ' + '.join(map(str,my_list1))
     my_list1 = my_list1.replace('x^0','')
     my_list1 = my_list1.replace('x^1','x')
