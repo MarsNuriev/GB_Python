@@ -2,17 +2,14 @@
 # и записать в файл многочлен степени k.
 # Пример:
 # - k=2 => 2*x² + 4*x + 5 = 0 или x² + 5 = 0 или 10*x² = 0
-# import random
-# while True:
-#     try:
-#         k = int(input('Введите k: '))
-#         break
-#     except ValueError:
-#         print('введите целое число: ')
+import random
+while True:
+    try:
+        k = int(input('Введите k: '))
+        break
+    except ValueError:
+        print('введите целое число: ')
 
-
-from random import randint
-k = int(input('Введите натуральную степень k:'))
 def urav(value):
     my_list = []
     my_list1 = []
