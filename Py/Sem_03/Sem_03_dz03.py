@@ -12,7 +12,7 @@ for arr_index in range(n):
 
 
 for arr_index1 in range(0,len(arr)):
-    arr_div.append(round(arr[arr_index1] % 1,2))
+    arr_div.append(round(arr[arr_index1] % 1, 2))
 
 razn_max_min = int(round((max(arr_div) - min(arr_div))*100,0))
 
